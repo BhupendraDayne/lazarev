@@ -63,7 +63,6 @@ background-color: #111;
      overflow: hidden;
 }
 .nav-part2 h5 span{
-
     font-size: 0.90vw;
     font-weight: 100;
     display: inline-block;
@@ -91,8 +90,20 @@ margin-left: 10px;
     top: 100%;
     z-index: 9;
     border-bottom: 1px solid #ffff;
-
 }
+.nav-bottom i{
+  display: none;
+  font-size: 3.4vh;
+  margin-left: 40vh; 
+}
+ .resp-nav{
+ display: none;
+ }
+ 
+.manu{
+  display: none;
+}
+ 
 .page1{
    position: relative;
     height:100vh;
@@ -413,6 +424,10 @@ margin-left: 10px;
    padding: 2vw;
    color: #000;
  }
+ .page5-elem:hover{
+  background-color:#fff;
+
+ }
  .heading{
    font-size: 4vw;
    font-weight:700;
@@ -434,13 +449,12 @@ margin-left: 10px;
      */
  }
  .page6{
+    
     min-height:100vh;
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
     position: relative;
     color: #000;
-
-
  }
  .section1{
     background-color: #fff;
@@ -470,7 +484,7 @@ margin-left: 10px;
   .section-right{
     height:100%;
     width:70%;
-    background-color: rgb(0, 68, 255);
+    /* background-color: rgb(0, 68, 255); */
     position: relative;
  }
    .section-right img{
@@ -763,10 +777,10 @@ margin-left: 10px;
       transform: translateX(0);
     }
         #btm8-part2 h4:nth-child(3){
-      transform: translateX(10%);
+      transform: translateX(15%);
     }
         #btm8-part2 h4:nth-child(4){
-      transform: translateX(20%);
+      transform: translateX(25%);
     }
         #btm8-part2 h4:nth-child(5){
       transform: translateX(30%);
@@ -780,8 +794,472 @@ margin-left: 10px;
         #btm8-part2 h4:nth-child(8){
       transform: translateX(60%);
     }
-   #page9{
-      height:100vh;
+  /* ux desgin 2line */
+      #btm8-part3 h4:nth-child(2){
+      transform: translateX(0);
+    }
+        #btm8-part3 h4:nth-child(3){
+      transform: translateX(15%);
+    }
+    /* ui desgin 3line */
+        #btm8-part4 h4:nth-child(2){
+      transform: translateX(0);
+    }
+        #btm8-part4 h4:nth-child(3){
+      transform: translateX(15%);
+    }
+        #btm8-part4 h4:nth-child(4){
+      transform: translateX(25%);
+    }
+
+   .page9{
+      padding: 3vw;
+      padding-left: 8vw;
+      height:40vh;
       width:100%;
-      background-color: blueviolet;
+      background-color:#000;
    }
+   .page9 h1{
+    font-size: 5vw;
+    padding-bottom: 3vw;
+   }
+   .page9 p{
+    font-size:1.5vw;
+    font-weight: 100;
+    width:60%;
+   }
+  .page10{
+    height:95vh;
+    width: 100%;
+    background-color:#000;
+    padding: 2vw;
+  }
+  .page10-container{
+    display: flex;
+    height:40%;
+    width: 100%;
+    padding:2vw;
+    padding-left:5vw;
+    gap: 0.5vw;
+    /* background-color: #4f5bff; */
+    padding-bottom: 0;
+    padding-top:4px;
+  }
+  .p10-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    height: 100%;
+    width: 33%;
+    padding:0 2vw;
+    background-color:#333;
+    border-radius: 5px;
+     transition: transform 0.3s ease;
+  }
+  .p10-elem-top{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+  .p10-elem-top h1{
+    font-size: 2vw;
+    padding-bottom: 2vw;
+  }
+  .p10-elem-top i{
+    font-size: 3vw;
+     padding-bottom: 2vw;
+     
+     padding-left:15vw;
+  }
+  .p10-elem-btm{
+    font-size: 1vw;
+    font-weight: 100;
+  }
+  .p10-content:hover{
+    background-color:#777;
+    transform: scale(1.2);
+  }
+  /* video div */
+  /* https://lazarev.kiev.ua/la24/awards-vp9-chrome.webm  */
+
+  footer{
+    height:60vh;
+    width: 100%;
+    background-color: #000;
+  }
+  .container{
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    padding: 1vw 4vw;
+    height: 65%;
+    width: 100%;
+    /* background-color: aqua; */
+    border-top: 1px solid #333;
+  }
+  .container-content{
+    /* background-color:crimson; */
+    width: 25%;
+    height:100%;
+    padding: 1vw;
+  }
+    .container-content h1{
+      font-size: 2vw;
+      padding-bottom: 3vw;
+    }
+      .container-content h4{
+        font-size: 1.2vw;
+      }
+        .fot-btm{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  height: 5vh;
+  width: 100%;
+  background-color: #000;
+  padding-bottom: 0;
+  border-top: 1px solid #222;
+}
+.fot-btm h1{
+  font-size:0.8vh;
+  padding-top: 5vh;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+      @media(max-width:500px){
+        nav{
+          display: initial;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height:10vh;
+          width: 100%;
+          padding:2.3vh 2.4vh;
+        }
+     .nav-part2{
+      display: none;
+     }
+     .nav-bottom{
+      display:none;
+     }
+      .resp-nav{
+        display: initial;
+        position:absolute;
+        top:0;
+        left:-100%;
+        z-index: 12;
+        background-color:#333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #dadada;
+        height: 100vh;
+        width:100%;
+        gap: 3vh;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1)2.5s;
+ }
+ .resp-nav i{
+  position: absolute;
+  top: 10%;
+  right:6%;
+  font-size: 5vh;
+ }
+ .resp-nav h4{
+  font-size:2.7vh;
+  text-transform: uppercase;
+ }
+  .resp-nav h4:hover{
+    color:blueviolet;
+  }
+    .resp-nav i:hover{
+    color:blueviolet;
+  }
+        #btn-nav{
+           display: none;
+        }
+        .manu{
+               display: initial;
+               display: flex; 
+               align-items: center;
+               justify-content: center;
+        }
+        .manu i{
+          font-size: 4vh;
+        }
+     
+        
+        .page1{
+          height:60vh;
+          width: 100%;
+          padding-top: 0%;
+
+         }
+        .page1 h2{
+          padding-top: 0%;
+          font-size:4vh;
+          line-height: 5vh;
+        }
+        .page1 p{
+          margin-top: 2%;
+          font-size:1.4vh;
+          padding:0 8.8vh;
+          line-height: 2.2vh;
+        }
+         .page1-something{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 3vh;
+          padding:0 3vh;
+         }
+          .page1-something h4{
+            font-size: 0.8vh;
+          }
+   .moving-div .move img{
+    height: 2.5vw;
+    margin: 0 1vw; 
+     }
+     .page2{
+      height:70%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+     }
+     .page2-left{
+      height: 40%;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+     }
+     .page2-left p{
+      font-size:1vh;
+      padding-bottom: 6vh;
+     }
+     .page2-left h5{
+      font-size:0.7vh;
+      width: 70%;
+      font-weight: 100;
+     }
+     .page1 h2 svg{
+      height: 6.5vw;
+     }
+     
+ .right-elem img{
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    scale: 0;
+ }
+      .page3{
+    height:35vh;
+    width: 100%;
+    background-color: #111;
+    background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .page3-centar{
+    /* background-color:red; */
+    display: flex;
+    padding: 1vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .page3-centar .icon{
+    background-color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.8vw;
+    border-radius: 50%;
+ }
+ .page3-centar .icon i{
+    font-size: 2.8vw;
+    color: #000;
+ }
+ .page3-centar h5{
+    font-size: 1vw;
+    background-color: #fff;
+    color: #000;
+    margin-top:0.8vw;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 700;
+    opacity: 0;
+    transition: all ease 0.5s;
+    transform: translateY(10%);
+    text-transform: uppercase;
+ }
+ .page3-centar:hover h5{
+    opacity: 1;
+    margin-top: 0.2;
+    transform: translateY(0%);
+ }
+ .page3 video{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    transform: scaleX(0.7) scaleY(0);
+    opacity:0;
+    border-radius:30px;
+    z-index: 999;
+ }
+  .page4{
+    height: 80%;
+  }
+  .page4-elem-bottom{
+    padding-top: 2.5vh;
+  }
+  .page5{
+    height:100vh;
+    width: 100%;
+    padding: 0;
+  }
+  .page5-container{
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    flex-direction: column;
+  }
+  .page5-container .page5-elem{
+    width:80%;
+    padding:1.6vh;
+  }
+  .heading{
+    font-size: 2.5vh;
+  }
+  .bottom-heading{
+    height: 30%;
+  }
+  .bottom-left{
+    font-size: 2vh;
+  }
+  .bottom-right{
+    font-size: 2vh;
+  }
+  .page6{
+    min-height:50vh;
+    width: 100%;
+  }
+  .section1{
+   height:40%;
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+  }
+  .section-left{
+    height:40%;
+    width: 20%;
+  }
+  .section-right{
+    padding-left:1.8vw;
+    width:100%;
+  }
+    .page7{
+      min-height:80vh;
+      width: 100%;
+      background-color: #000;
+      display: flex;
+      align-items:flex-start;
+      justify-content: space-between;
+      position: relative;
+      padding: 2vw 10vw;
+     }
+  .h1-open{
+    font-size:1vh;
+  }
+  
+  .page7-content .flex{
+    display: flex;
+    align-items: flex-start;
+  }
+  .flex> h4{
+   font-size:0.7vh;
+   padding:5px 8px;
+  }
+   .page8{
+   min-height:50vh;
+   width: 100%;
+   background-color: #fff;
+   padding:4vw;
+  }
+     .page8-bottom{
+      display: flex;
+      align-items: flex-start;
+      height:20vh;
+      width: 100%;
+      border-top: 1px solid #dadada;
+
+    }
+        .btm8-parts h5{
+      font-weight: 500;
+      font-size:2vw;
+      color: #000;
+      margin-bottom:1.7vh;
+    }
+      .btm8-parts h4{
+      color: #fff;
+      background-color: #111;
+      padding:5px 10px;
+      margin-bottom:0.3vh;
+      border-radius:50px;
+      font-size: 1.2vw;
+      font-weight:200;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+       .page9{
+      padding: 3vw;
+      padding-left: 8vw;
+      height:10vh;
+      width:100%;
+      background-color:#000;
+   }
+     .page10{
+    height:20vh;
+    width: 100%;
+    background-color:#000;
+    padding: 2vw;
+  }
+     footer{
+    height:10vh;
+    width: 100%;
+    background-color: #000;
+  }
+  .fot-btm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:2vh;
+  width: 100%;
+  background-color: #000;
+  padding-bottom: 0;
+  border-top: 1px solid #222;
+}
+.fot-btm h1{
+  padding-top: 0;
+  font-size:0.4vh;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+}
+ 

@@ -171,14 +171,62 @@ nav.addEventListener("mouseleave",function(){
       scrub:true
 
    }
+ }),
+     gsap.from("#btm8-part3 h4",{
+   x:0,
+   duration:1,
+   scrollTrigger:{
+      trigger:"#btm8-part3",
+      scroller:".main",
+      // markers:true,
+      start:"top 80%",
+      end:"top 10%",
+      scrub:true
+
+   }
+ }),
+     gsap.from("#btm8-part4 h4",{
+   x:0,
+   duration:1,
+   scrollTrigger:{
+      trigger:"#btm8-part4",
+      scroller:".main",
+      // markers:true,
+      start:"top 80%",
+      end:"top 10%",
+      scrub:true
+
+   }
  })
+
  } 
    loadingAnimation()
    locomotiveAnimation()
-
     navanimation()
     page2animation()
     page3videoanimatio()
     page6animation()
     page8Scrollanimation()
+    respnav()
+   
+    
+   function respnav(){
+            var manu=document.querySelector(".manu");
+      var cls=document.querySelector(".ri-close-circle-line");
+      var respnav=document.querySelector(".resp-nav")
+      manu.addEventListener("click",function(){
+         respnav.style.left="0%"
+         console.log("click and open")
+      })
+      cls.addEventListener("click",function(){
+         respnav.style.left="-100%"
+         console.log("click and close")
+      })
+   }
+     
+      
+     
+    
+ 
+
  
